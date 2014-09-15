@@ -1,0 +1,4 @@
+## Generic files to ignore
+*.lyx~
+*.lyx#
+*.bib.bak
