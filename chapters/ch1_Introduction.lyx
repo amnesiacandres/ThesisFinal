@@ -119,6 +119,74 @@ key "AmericanCancerSociety2010"
 \end_layout
 
 \begin_layout Standard
+This disease is characterized by uncontrolled cellular reproduction.
+ It is caused by multiple internal and external factors --some of which
+ are known and others remain unknown-- that affect cellular self-control
+ mechanisms.
+ When cancerous cells appear, they grow and reproduce without control leading
+ to the formation of tumors that may affect an organ or organism by causing
+ sickness, loss of sensation or cognitive abilities, pain, organ malfunction,
+ and sometimes death 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "National2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Breast cancer is the leading type among all cancers.
+ It is one of the most frequent, and the one with the highest absolute mortality
+ in the world.
+ In 2012, 1.7 million new cases were reported worldwide, accounting for 26%
+ of all cancers in women excluding non-melanoma skin cancer.
+ Global mortality was estimated above 500 thousand deaths, representing
+ 14% of all cancer-related deaths in women 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ferlay2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The causes of breast cancer are not completely identified.
+ Different studies have associated genetic, environmental and behavioral
+ factors with the disease 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Knaul2009"
+
+\end_inset
+
+.
+ Given the complexity of the disease, it is difficult to detect or treat
+ in a generalized way, and requires costly efforts to provide early detection
+ and personalized treatment.
+ It is widely accepted that early detection decreases mortality 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ng2003,JinshanTang2009"
+
+\end_inset
+
+, and that X-ray mammography is the most effective method available for
+ detection of breast cancer before it becomes clinically palpable for non-sympto
+matic patients 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ng2003"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "/home/amnesiac/Dropbox/ThesisFinal/biblio"
