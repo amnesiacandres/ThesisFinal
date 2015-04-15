@@ -1,5 +1,6 @@
 ## Generic files to ignore
 *.lyx~
 *.lyx#
+*.lyx.emergency
 *.bib.bak
 refs/*
