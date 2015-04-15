@@ -13,7 +13,7 @@ It works!
 
 File structure
 
-Main.lyx - Principal file used for compiling everything. 
+Main.lyx - Principal file used to compile everything. 
 
 chapters/chX... - Chapter files, are separated to reduce complexity at debugging.
 
@@ -24,4 +24,6 @@ refs/.. - Reference files including copies or links to the files in the bibliogr
 
 Log
 
-Sep 14, 2014 - activity was retaken after the break !
+Sep 14, 2014 - activity was retaken after the break 
+
+Apr 14, 2015 - idem!

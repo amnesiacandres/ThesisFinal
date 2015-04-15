@@ -30,7 +30,7 @@
 \index_command default
 \float_placement t
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -64,7 +64,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 2cm
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -83,10 +83,11 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Cancer is arguably the most important disease in the modern world.
- According to the World Health Organization (WHO), there were 4.1 million
+Cancer is one of the most important diseases in the modern world.
+ According to the World Health Organization (WHO), there were 14 million
  new cancer cases, 8.2 million cancer deaths and 32.6 million people living
- with cancer (within 5 years of diagnosis) in 2012 worldwide 
+ with cancer (within 5 years of diagnosis) in 2012 worldwide, the number
+ of new cases is expected to grow at least 70% in the next two decades 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ferlay2013"
@@ -117,17 +118,19 @@ key "AmericanCancerSociety2010"
 \end_inset
 
 .
+ In consequence, cancer is a prioritary objective for several companies
+ and governments.
 \end_layout
 
 \begin_layout Standard
-This disease is characterized by uncontrolled cellular reproduction.
- It is caused by multiple internal and external factors --some of which
- are known and others remain unknown-- that affect cellular self-control
- mechanisms.
- When cancerous cells appear, they grow and reproduce without control leading
- to the formation of tumors that may affect an organ or organism by causing
- sickness, loss of sensation or cognitive abilities, pain, organ malfunction,
- and sometimes death 
+This disease is biologically characterized by uncontrolled cellular reproduction.
+ This errant growth is caused by multiple internal and external factors
+ --some of which are known and others remain unknown-- that affect cellular
+ self-control mechanisms.
+ When cancerous cells appear, they grow and reproduce incessantly, thus
+ leading to the formation of tumors that may affect an organ or organism
+ by causing sickness, loss of sensation or cognitive abilities, pain, organ
+ malfunction, and sometimes death 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "National2009"
@@ -152,11 +155,88 @@ key "Ferlay2013"
 \end_inset
 
 .
+ An important observation about this type of cancer is its incidence variation
+ across the world: more developed regions have a higher incidence of breast
+ cancer than less developed regions at a 3.4 ratio as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Breast-Cancer-incidence-map"
+
+\end_inset
+
+.
+ However, mortality is similar around the globe, suggesting that the survival
+ rates in less developed countries, as Mexico, are much lower than in developed
+ regions.
 \end_layout
 
 \begin_layout Standard
-The causes of breast cancer are not completely identified.
- Different studies have associated genetic, environmental and behavioral
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Breast Cancer incidence around the world.
+ Source: GLOBOCAN 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ferlay2013"
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Breast-Cancer-incidence-map"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Breast cancer is an heterogeneous disease in various levels.
+ Different types of breast cancer have been identified based on the structure
+ where it originated and how it grows and interact with surrounding tissue.
+ Each type has a variety of characteristics and symptoms that may or not
+ be present in all the individuals, and each type responds differently to
+ available therapies.
+ Furthermore, at a genetic level, there are molecular cancer subtypes which
+ can also determine the course of the disease and its response to treatment
+ and are not entirely understood.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF=Biology of cancer
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The causes of breast cancer are not entirely identified.
+ Different studies have associated genetic, environmental, and behavioral
  factors with the disease 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -165,7 +245,7 @@ key "Knaul2009"
 \end_inset
 
 .
- Given the complexity of the disease, it is difficult to detect or treat
+ Given the complexity of the illness, it is difficult to detect or treat
  in a generalized way, and requires costly efforts to provide early detection
  and personalized treatment.
  In general, it is widely accepted that early detection of breast cancer
@@ -177,50 +257,15 @@ key "Ng2003,JinshanTang2009"
 \end_inset
 
 .
+ Current prompt discovery techniques contribute to the high survival rates
+ (80-90%) in developed regions, and improving these methods is still a matter
+ of scientific interest.
 \end_layout
 
 \begin_layout Standard
-Breast cancer is an heterogeneous disease in various levels.
- There are different types of breast cancer based on the structure where
- it originated and how it is progressed.
- Each type has a variety of characteristics and symptoms that may or not
- be present in all the individuals.
- And each type responds differently to distinct therapies.
- Furthermore, at a genetic level, there are molecular cancer subtypes which
- can also determine the course of the disease and its response to treatment.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF=Biology of cancer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The causes of breast cancer are not completely identified.
- Different studies have associated genetic, environmental and behavioral
- factors with the disease 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Knaul2009"
-
-\end_inset
-
-.
- In consequence, breast cancer is difficult to prevent, making it a necessity
- to account on effective diagnostic mechanisms that enable physicians to
- detect the disease on early stages, when the disease has high probabilities
- of being eradicated.
-\end_layout
-
-\begin_layout Standard
-Among the detection methods, it is generally accepted that x-ray mammography
- is the most effective detecting breast cancer before it becomes clinically
- palpable for non-symptomatic patients 
+Among the non-invasive detection methods, it is generally accepted that
+ x-ray mammography is the most effective detecting breast cancer before
+ it becomes clinically palpable for non-symptomatic patients 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ng2003"
@@ -234,6 +279,9 @@ key "Ng2003"
  and mediolateral oblique (MLO) projections are acquired from each breast.
  The images are then inspected by a trained radiologist with the aim to
  detect subtle signs that hint towards the presence of an early stage tumor.
+ Some important signs of malignancy that can be detected with x-ray mammography
+ include calcifications, localized parenchymal distortions, and abnormal
+ tissue density.
  Screening mammography has proven to increase the cancer detection rate
  and reduce morbidity and mortality rates in the United States 
 \begin_inset CommandInset citation
@@ -273,9 +321,11 @@ key "sampat2005computer"
 \begin_layout Standard
 Some solutions have been proposed to increase the efficiency of X-ray mammograph
 y.
- Double reading requires a second radiologist to interpret the image.
- It increases sensitivity (true positive) and specificity (true negatives),
- but it also increases workload and costs for healthcare systems 
+ The most widely used is double reading, which requires a second radiologist
+ to interpret the image.
+ This approach increases sensitivity (true positive) and specificity (true
+ negatives), but it also increases workload and costs for healthcare systems
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Brown1996"
@@ -284,10 +334,11 @@ key "Brown1996"
 
 .
  Another solution is the use of computer assisted detection (CADe) methods.
- These systems analyze each image and place a mark on all suspicious regions
- found, which then are required to be evaluated by a radiologist.
- There is no clear evidence showing an overall significant advantage of
- using CADe for screening on a clinical setting 
+ These systems analyze each image and using tuned algorithms, place a mark
+ on all suspicious regions found, which then are prompted to be evaluated
+ by a radiologist.
+ There is no clear evidence, however, showing an overall significant advantage
+ of using CADe for screening on a clinical setting 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fenton2011"
@@ -296,8 +347,9 @@ key "Fenton2011"
 
 .
  However, CADe also increases the workload to the radiologist because the
- mammograms need to be inspected prior to the computed assistance, and then
- inspect each mark and evaluate the output of the CADe system 
+ mammograms need to be inspected subsequently to the computed assistance,
+ to inspect each mark and determine whether the output of the CADe system
+ is sufficient to change the diagnosis 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "shile2001changes"
@@ -305,20 +357,44 @@ key "shile2001changes"
 \end_inset
 
 .
+ Modern CADe platforms rely on the analysis of large sets of image features,
+ a field of study that has been labeled 
+\begin_inset Quotes eld
+\end_inset
+
+radiomics
+\begin_inset Quotes erd
+\end_inset
+
+ due to its similarity to other 
+\begin_inset Quotes eld
+\end_inset
+
+omics
+\begin_inset Quotes erd
+\end_inset
+
+ that use big volumes of biological information to find patterns associated
+ to a disease.
 \end_layout
 
 \begin_layout Standard
-The opportunity to develop automated systems parallel to CAD is latent.
+The opportunity to improve CADe systems, and develop automated systems parallel
+ to CADe is latent.
  For example, high volume screening facilities could benefit from triaging
  systems that identify high-risk mammograms prior to the inspection of the
  radiologist.
  Another opportunity relies on the ability to relate image features with
  biological phenomena happening in the mammary tissue, an aspect not covered
- by any CAD system available.
+ by any CAD system available today.
+ Furthermore, the technological capabilities of modern computers and networks
+ allows the implementation of complex image analysis and artificial intelligence
+ techniques to address the aforementioned opportunity.
 \end_layout
 
 \begin_layout Standard
-Recent scientific contributions point towards the need to develop image-based
+Recent scientific publications point towards the need to develop high-throughput
+ image analysis systems that enable the characterization of image-based
  biomarkers for many diseases, including breast cancer 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -339,7 +415,7 @@ key "FDA2006"
  For example, blood pressure is a surrogate biomarker of adverse cardiovascular
  outcome.
  In recent years significant efforts have been made towards the identification
- of image-based biomarkers for drug development.
+ of image-based biomarkers therapeutic response during drug development.
  In that particular scenario, an image biomarker is easier to follow in
  long term clinical trials, as opposed to invasive techniques that require
  more money and resources to be tracked.
@@ -349,16 +425,56 @@ key "FDA2006"
  Modern imaging equipment and digital technologies facilitate the acquisition
  of large volumes of data for discovery of image biomarkers, additionally
  the widespread availability of equipment allows the creation of the systematic
- image datasets required for biomarker discovery.
+ image collections required for biomarker discovery [REF NCIA], and searching
+ for correlations with other equally big sets of biological information.
+ This research area that associates imaging phenotypes with other 
+\begin_inset Quotes eld
+\end_inset
+
+omics
+\begin_inset Quotes erd
+\end_inset
+
+ (commonly gene expression) is referred in recent literature as radiogenomics.
 \end_layout
 
 \begin_layout Standard
-Significant work is yet to be done in order to understand the relation between
- tissue structure in mammograms and molecular status of the cells.
- The establishment of some of these relations would lead to the development
- of quantitative measurements acting as surrogate measurements for breast
- cancer risk factors.
+The principal objective of this dissertation is to study and contribute
+ towards a better understanding of the relation between tissue structure
+ in mammograms characterized with image analysis techniques, and the molecular
+ status of the cells of breast cancer tumors.
+ This will be done by the construction of image-based biomarkers for the
+ distinction of different classes of interest: Cancer/Normal, Low/High BIRADS,
+ genetic signatures of breast cancer, and molecular subtypes.
+ The biomarkers will be characterized using a broad set of quantitative
+ analysis techniques, emphasizing in a novel set of features obtained from
+ the Minkowski functionals.
  
+\end_layout
+
+\begin_layout Standard
+A secondary objective is to create a collection of digital mammograms from
+ Mexican patients, along with their corresponding demographic, clinical,
+ and pathological information.
+ This effort has been funded by CONACYT with the project 12345678, that
+ aims to find correlations between imaging features and genetic signatures
+ of breast cancer in Mexican patients.
+\end_layout
+
+\begin_layout Standard
+The analyses performed for this dissertation part from the hypotheses that:
+ image-based biomarkers derived from screening mammograms are strongly associate
+d with the presence of breast cancer, and its characteristics such as BIRADS
+ score or molecular subtype; and that high-order texture features have stronger
+ ability to characterize breast cancer than first-order image features.
+ 
+\end_layout
+
+\begin_layout Standard
+By enabling a better comprehension of the relationships between mammograms
+ and breast cancer, it is expected from this research to contribute to the
+ advancement of scientific knowledge in the fields of radiomics, radiogenomics,
+ and breast cancer research.
 \end_layout
 
 \begin_layout Standard
